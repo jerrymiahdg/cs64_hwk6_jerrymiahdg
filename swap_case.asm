@@ -145,6 +145,7 @@ postIfLower:
 		
 	li $v0, 11
 	add $a0, $t0, $t5
+	sb $a0, 0($s0)
 	syscall
 	li $v0, 4
 	la $a0, newline
